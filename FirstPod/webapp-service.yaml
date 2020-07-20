@@ -12,10 +12,10 @@ spec:
 #NodePort should be greater than 30000 comes only with type = NodePort
 #or else use Engress service for using port 80
   ports:
-    name: http
+  - name: http
     port: 80
     nodePort: 30080
 #ClusterIP is used for internal service i.e microservices not accesable from browser IP would be private
-#NodePort is for exposiing service to external world i.e webapp
+#NodePort is for exposing service to external world i.e webapp
 
   type: NodePort
